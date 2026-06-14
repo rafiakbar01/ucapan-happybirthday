@@ -240,7 +240,7 @@
 
     .photo-card img {
       width: 100%;
-      aspect-ratio: 4/3;
+      aspect-ratio: 3/4;
       object-fit: cover;
       display: block;
       transition: transform .45s ease;
@@ -928,99 +928,76 @@
           terlupakan</p>
       </div>
 
-      <!--
-        Mobile  : 2-column masonry feel — row 1: big left + small right
-                                          row 2: small left + big right
-                                          row 3: small left + big right … repeat
-        Tablet+ : 3 equal columns
-      -->
-
-      <!-- ROW 1: big | small -->
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
-        <!-- big card (spans both rows in the left column on mobile) -->
-        <div class="photo-card reveal row-span-2" style="grid-row:span 2">
-          <img src="image1.png" alt="Foto 1" loading="lazy" style="aspect-ratio:2/3" />
+      <!-- Grid responsive: 2 kolom di mobile, 3 di tablet, 5 di desktop. Semua kartu portrait & tinggi seragam -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+        <!-- Foto 1 -->
+        <div class="photo-card reveal">
+          <img src="image1.png" alt="Foto 1" loading="lazy" />
           <div class="photo-caption">
             <p class="caption-text">Kamu & Aku 💕</p>
           </div>
         </div>
+        <!-- Foto 2 -->
         <div class="photo-card reveal" style="animation-delay:.1s">
           <img src="image2.png" alt="Foto 2" loading="lazy" />
           <div class="photo-caption">
             <p class="caption-text">Bersamamu 🌸</p>
           </div>
         </div>
-        <div class="photo-card reveal hidden md:block" style="animation-delay:.15s">
+        <!-- Foto 3 -->
+        <div class="photo-card reveal" style="animation-delay:.15s">
           <img src="image3.png" alt="Foto 3" loading="lazy" />
           <div class="photo-caption">
             <p class="caption-text">Senja kita 🌅</p>
           </div>
         </div>
-      </div>
-
-      <!-- ROW 2 (mobile: right col of row1 continued) -->
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
+        <!-- Foto 4 -->
         <div class="photo-card reveal" style="animation-delay:.2s">
           <img src="image4.png" alt="Foto 4" loading="lazy" />
           <div class="photo-caption">
             <p class="caption-text">Santai berdua ☕</p>
           </div>
         </div>
-        <!-- big card right on mobile -->
-        <div class="photo-card reveal row-span-2" style="grid-row:span 2;animation-delay:.25s">
-          <img src="image5.png" alt="Foto 5" loading="lazy" style="aspect-ratio:2/3" />
+        <!-- Foto 5 -->
+        <div class="photo-card reveal" style="animation-delay:.25s">
+          <img src="image5.png" alt="Foto 5" loading="lazy" />
           <div class="photo-caption">
             <p class="caption-text">Jalan bersamamu 🌹</p>
           </div>
         </div>
-        <div class="photo-card reveal hidden md:block" style="animation-delay:.3s">
-          <img src="image6.png" alt="Foto 6" loading="lazy" />
-          <div class="photo-caption">
-            <p class="caption-text">Spesial ✨</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ROW 3 -->
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-3">
-        <div class="photo-card reveal" style="animation-delay:.35s">
+        <!-- Foto 6 -->
+        <div class="photo-card reveal" style="animation-delay:.3s">
           <img src="image6.png" alt="Foto 6" loading="lazy" />
           <div class="photo-caption">
             <p class="caption-text">Momen spesial ✨</p>
           </div>
         </div>
-        <div class="photo-card reveal" style="animation-delay:.4s">
+        <!-- Foto 7 -->
+        <div class="photo-card reveal" style="animation-delay:.35s">
           <img src="image7.png" alt="Foto 7" loading="lazy" />
           <div class="photo-caption">
             <p class="caption-text">Bahagia 😊</p>
           </div>
         </div>
-        <div class="photo-card reveal hidden md:block" style="animation-delay:.45s">
+        <!-- Foto 8 -->
+        <div class="photo-card reveal" style="animation-delay:.4s">
           <img src="image8.png" alt="Foto 8" loading="lazy" />
-          <div class="photo-caption">
-            <p class="caption-text">Kenangan 🌺</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ROW 4: full-width banner on mobile, normal on desktop -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-        <div class="photo-card reveal sm:col-span-2 md:col-span-1" style="animation-delay:.5s">
-          <img src="image8.png" alt="Foto 8" loading="lazy" style="aspect-ratio:16/7" />
           <div class="photo-caption">
             <p class="caption-text">Kenangan indah 🌺</p>
           </div>
         </div>
-        <div class="photo-card reveal hidden sm:block" style="animation-delay:.55s">
+        <!-- Foto 9 -->
+        <div class="photo-card reveal" style="animation-delay:.45s">
           <img src="image9.png" alt="Foto 9" loading="lazy" />
           <div class="photo-caption">
             <p class="caption-text">Cinta abadi 💝</p>
           </div>
         </div>
-        <div class="photo-card reveal hidden md:block" style="animation-delay:.6s">
-          <img src="image9.png" alt="Foto 9" loading="lazy" />
+        <!-- Foto 10 -->
+        <div class="photo-card reveal" style="animation-delay:.5s">
+          <img src="image10.png" alt="Foto 10" loading="lazy" />
           <div class="photo-caption">
-            <p class="caption-text">Cinta abadi 💝</p>
+            <p class="caption-text">Selamanya 💖</p>
           </div>
         </div>
       </div>
